@@ -456,7 +456,7 @@ void checkdefcount(int defcount){
 }
 void checkusecount(int usecount){
     if(usecount > MAX_USECAP){
-        parseerror(TOO_MANY_DEF,tkz.lineNum,1);
+        parseerror(TOO_MANY_USE,tkz.lineNum,1);
     }
 }
 void checkinstrcount(int instrcount){

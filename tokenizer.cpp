@@ -93,7 +93,7 @@ Token Tokenizer::getToken() { // Get the next valid token
         Token token(line.substr(start, offset - start), lineNum, start+1);
         return token;
     }
-    cout<<"Wrong"<<lineNum<<" "<<offset+1<<endl;
+//    cout<<"Wrong"<<lineNum<<" "<<offset+1<<endl;
     Token token("", lineNum, offset+1);
     return token;
 }
